@@ -1,0 +1,21 @@
+<h1>Divvy Stations</h1>
+<hr>
+
+<form action='/stations/search'>
+ <input class="form-control input-lg" name="address" placeholder="Enter an address to search...">
+</form>
+
+<table class = "table">
+    <thead>
+        <th>ID</th>
+        <th>Location</th>
+    </thead>
+    <tbody>
+        <% DivvyStation.all.each do |address| %>
+        <tr>
+            <td><a href='stations/<%= address['id'] %>?id=<%= address['id'] %>'> <%= address['id'] %></a></td>
+            <td><a href='stations/<%= address['id'] %>?id=<%= address['id'] %>'> <%= address['name'] %></a></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>

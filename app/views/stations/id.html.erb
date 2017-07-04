@@ -1,0 +1,17 @@
+<% name = '' %>
+<% lng = '' %>
+<% lat = '' %>
+
+<% DivvyStation.all.each do |address| %>
+    <% if address['id'].to_i == params['id'].to_i %>
+        <% name = address['name'] %>
+        <% lng = address['lng'] %>
+        <% lat = address['lat'] %>
+    <% else %>
+    <% end %>
+<% end %>
+
+<h1><a href='/stations'>Divvy Stations</a></h1><h3><%= name %></h3>
+<hr>
+
+<%= show_map(lat, lng) %>

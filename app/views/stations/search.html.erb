@@ -1,0 +1,8 @@
+<% station = DivvyStation.find_nearest_station(params['address']) %>
+<% lng = station['lng'] %>
+<% lat = station['lat'] %>
+
+<h1><a href='/stations'>Divvy Stations</a></h1><h3><%= station['name'] %></h3>
+<hr>
+
+<%= show_map(lat, lng) %>

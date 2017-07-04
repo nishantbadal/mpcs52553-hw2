@@ -1,0 +1,964 @@
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:19:41 -0500
+  
+ActionController::RoutingError (uninitialized constant StationsController):
+  
+activesupport (5.1.2) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.2) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.2) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.2) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.2) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.2) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:33:53 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 212ms (Views: 210.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:47:00 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 30.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:51:23 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:53:24 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:59:02 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (28.6ms)
+Completed 500 Internal Server Error in 34ms
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Hash:0x007f86fc0aabd8>):
+     9:     <tbody>
+    10:         <% DivvyStation.all.each do |address| %>
+    11:         <tr>
+    12:             <td><% address.id %></td>
+    13:             <td><% address.name %></td>
+    14:         </tr>
+    15:         <% end %>
+  
+app/views/stations/index.html.erb:12:in `block in _app_views_stations_index_html_erb__44785135692784141_70108876086340'
+app/views/stations/index.html.erb:10:in `each'
+app/views/stations/index.html.erb:10:in `_app_views_stations_index_html_erb__44785135692784141_70108876086340'
+Started GET "/" for 127.0.0.1 at 2017-07-04 16:59:40 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Hash:0x007f86fe1a3380>):
+     9:     <tbody>
+    10:         <% DivvyStation.all.each do |address| %>
+    11:         <tr>
+    12:             <td><%= address.id %></td>
+    13:             <td><%= address.name %></td>
+    14:         </tr>
+    15:         <% end %>
+  
+app/views/stations/index.html.erb:12:in `block in _app_views_stations_index_html_erb__44785135692784141_70108882803020'
+app/views/stations/index.html.erb:10:in `each'
+app/views/stations/index.html.erb:10:in `_app_views_stations_index_html_erb__44785135692784141_70108882803020'
+Started GET "/" for 127.0.0.1 at 2017-07-04 17:00:53 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 17:12:10 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 33ms (Views: 31.9ms)
+
+
+Started GET "/stations/2" for 127.0.0.1 at 2017-07-04 17:12:13 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 406 Not Acceptable in 50ms
+
+
+  
+ActionController::UnknownFormat (StationsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.2) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-04 17:12:55 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 14ms (Views: 12.4ms)
+
+
+Started GET "/stations/2" for 127.0.0.1 at 2017-07-04 17:15:36 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 406 Not Acceptable in 45ms
+
+
+  
+ActionController::UnknownFormat (StationsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.2) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-04 17:21:56 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 31ms (Views: 28.5ms)
+
+
+Started GET "/stations/2" for 127.0.0.1 at 2017-07-04 17:21:58 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.2ms)
+
+
+Started GET "/stations/5" for 127.0.0.1 at 2017-07-04 17:22:03 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 17:34:31 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 30ms (Views: 28.1ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:34:32 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-04 17:35:11 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 20ms (Views: 18.1ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:35:13 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 10.2ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:35:24 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:35:58 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms)
+
+
+Started GET "/stations/4?id=4" for 127.0.0.1 at 2017-07-04 17:36:01 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.6ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:36:10 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 10.3ms)
+
+
+Started GET "/stations/5?id=5" for 127.0.0.1 at 2017-07-04 17:36:18 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 10.4ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:38:36 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 12.2ms)
+
+
+Started GET "/stations/3?id=3" for 127.0.0.1 at 2017-07-04 17:38:39 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:38:44 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:39:46 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::Template::Error (undefined method `length' for #<ActionController::Parameters:0x007f86fc09a2b0>):
+    1: <p><% params.length %> test</p>
+  
+app/views/stations/id.html.erb:1:in `_app_views_stations_id_html_erb__3210776274786895449_70108865480000'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:40:03 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (undefined method `size' for #<ActionController::Parameters:0x007f86fd519e20>):
+    1: <p><% params.size %> test</p>
+  
+app/views/stations/id.html.erb:1:in `_app_views_stations_id_html_erb__3210776274786895449_70108876183680'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:40:25 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 9.5ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:41:25 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ActionView::Template::Error (undefined method `count' for #<ActionController::Parameters:0x007f86f7d169f8>):
+    1: <p><% params.count %> test</p>
+  
+app/views/stations/id.html.erb:1:in `_app_views_stations_id_html_erb__3210776274786895449_70108850363180'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:41:48 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 10.6ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:50:57 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/nishantbadal/GitHub/mpcs52553-hw2/app/views/stations/id.html.erb:11: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/stations/id.html.erb:11: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:51:23 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/Users/nishantbadal/GitHub/mpcs52553-hw2/app/views/stations/id.html.erb:9: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/stations/id.html.erb:9: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:51:51 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/Users/nishantbadal/GitHub/mpcs52553-hw2/app/views/stations/id.html.erb:11: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/stations/id.html.erb:11: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:54:06 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/Users/nishantbadal/GitHub/mpcs52553-hw2/app/views/stations/id.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/stations/id.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:55:08 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/Users/nishantbadal/GitHub/mpcs52553-hw2/app/views/stations/id.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/stations/id.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:55:57 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (193.8ms)
+Completed 500 Internal Server Error in 197ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `storedAddress' for #<#<Class:0x007f86fc2a3db8>:0x007f86fd28aa10>):
+     5:     <% end %>
+     6: <% end %>
+     7: 
+     8: <h1>Divvy Stations</h1><h4><%= storedAddress['name'] %></h4>
+     9: <hr>
+    10: 
+    11: <p><%= params["id"] %> test</p>
+  
+app/views/stations/id.html.erb:8:in `_app_views_stations_id_html_erb__3210776274786895449_70108874808160'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:58:18 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (163.8ms)
+Completed 500 Internal Server Error in 167ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `storedAddress' for #<#<Class:0x007f86fc2a3db8>:0x007f86fc61aca8>):
+     5:     <% end %>
+     6: <% end %>
+     7: 
+     8: <h1>Divvy Stations</h1><h4><%= storedAddress %></h4>
+     9: <hr>
+    10: 
+    11: <p><%= params["id"] %> test</p>
+  
+app/views/stations/id.html.erb:8:in `_app_views_stations_id_html_erb__3210776274786895449_70108868270680'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:58:49 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (214.9ms)
+Completed 500 Internal Server Error in 218ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `storedAddress' for #<#<Class:0x007f86fc2a3db8>:0x007f86f90f23a0>):
+     5:     <% end %>
+     6: <% end %>
+     7: 
+     8: <h1>Divvy Stations</h1><h4><%= storedAddress %></h4>
+     9: <hr>
+    10: 
+    11: <p><%= params["id"] %> test</p>
+  
+app/views/stations/id.html.erb:8:in `_app_views_stations_id_html_erb__3210776274786895449_70108840367640'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 17:59:01 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (168.9ms)
+Completed 500 Internal Server Error in 172ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `storedAddress' for #<#<Class:0x007f86fc2a3db8>:0x007f86fd00a088>):
+     5:     <% end %>
+     6: <% end %>
+     7: 
+     8: <h1>Divvy Stations</h1><h4><%= storedAddress %></h4>
+     9: <hr>
+    10: 
+    11: <p><%= params["id"] %> test</p>
+  
+app/views/stations/id.html.erb:8:in `_app_views_stations_id_html_erb__3210776274786895449_70108873496600'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:00:39 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (169.9ms)
+Completed 500 Internal Server Error in 174ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `storedAddress' for #<#<Class:0x007f86fc2a3db8>:0x007f86f7eda8c0>):
+     6:     <% end %>
+     7: <% end %>
+     8: 
+     9: <h1>Divvy Stations</h1><h4><%= storedAddress %></h4>
+    10: <hr>
+    11: 
+    12: <p><%= params["id"] %> test</p>
+  
+app/views/stations/id.html.erb:9:in `_app_views_stations_id_html_erb__3210776274786895449_70108851478400'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:00:42 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (179.2ms)
+Completed 500 Internal Server Error in 183ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `storedAddress' for #<#<Class:0x007f86fc2a3db8>:0x007f86fe01b800>):
+     6:     <% end %>
+     7: <% end %>
+     8: 
+     9: <h1>Divvy Stations</h1><h4><%= storedAddress %></h4>
+    10: <hr>
+    11: 
+    12: <p><%= params["id"] %> test</p>
+  
+app/views/stations/id.html.erb:9:in `_app_views_stations_id_html_erb__3210776274786895449_70108881932860'
+app/controllers/stations_controller.rb:7:in `show'
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:03:01 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 14ms (Views: 13.6ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:03:28 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 10.0ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:03:30 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 11.7ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:03:47 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 9.9ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:06:02 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 12.6ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:07:18 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:07:19 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 21ms (Views: 18.6ms)
+
+
+Started GET "/stations/9?id=9" for 127.0.0.1 at 2017-07-04 18:07:22 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"9"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 9.2ms)
+
+
+Started GET "/stations/9?id=9" for 127.0.0.1 at 2017-07-04 18:07:25 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"9"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started GET "/stations/77?id=77" for 127.0.0.1 at 2017-07-04 18:07:28 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"77"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started GET "/stations/85?id=85" for 127.0.0.1 at 2017-07-04 18:07:33 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"85"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:10:27 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 17ms (Views: 15.4ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:17:54 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 23ms (Views: 20.2ms)
+
+
+Started GET "/stations?address=test" for 127.0.0.1 at 2017-07-04 18:17:57 -0500
+Processing by StationsController#index as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms)
+
+
+Started GET "/stations?address=test" for 127.0.0.1 at 2017-07-04 18:23:02 -0500
+Processing by StationsController#index as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 28ms (Views: 26.8ms)
+
+
+Started GET "/stations?address=test" for 127.0.0.1 at 2017-07-04 18:23:07 -0500
+Processing by StationsController#index as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 17ms (Views: 15.9ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:23:09 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"address"=>"test", "id"=>"search"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 11.3ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:23:50 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 17ms (Views: 16.0ms)
+
+
+Started GET "/stations/search?address=what" for 127.0.0.1 at 2017-07-04 18:23:54 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"address"=>"what", "id"=>"search"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.9ms)
+
+
+Started GET "/stations/5?id=5" for 127.0.0.1 at 2017-07-04 18:24:20 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 11.0ms)
+
+
+Started GET "/stations/search?address=what" for 127.0.0.1 at 2017-07-04 18:25:14 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"address"=>"what", "id"=>"search"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 15ms (Views: 14.9ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:25:18 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 20ms (Views: 19.0ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:25:22 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"address"=>"test", "id"=>"search"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:27:08 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.9ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:27:11 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 16ms (Views: 15.8ms)
+
+
+Started GET "/stations/3?id=3" for 127.0.0.1 at 2017-07-04 18:27:13 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.5ms)
+
+
+Started GET "/stations/4?id=4" for 127.0.0.1 at 2017-07-04 18:27:17 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.8ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:27:21 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:29:18 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 16ms (Views: 14.9ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:29:20 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (639.2ms)
+Completed 200 OK in 647ms (Views: 646.5ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:29:38 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (284.0ms)
+Completed 200 OK in 292ms (Views: 291.6ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:29:51 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (96.2ms)
+Completed 200 OK in 105ms (Views: 104.7ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:30:06 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (1035.9ms)
+Completed 200 OK in 1044ms (Views: 1043.5ms)
+
+
+Started GET "/stations/search?address=test" for 127.0.0.1 at 2017-07-04 18:31:21 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"test"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (139.4ms)
+Completed 200 OK in 152ms (Views: 151.5ms)
+
+
+Started GET "/stations/search?address=5050+S+lakeshore+dr%2C+Chicago%2C+IL+60615" for 127.0.0.1 at 2017-07-04 18:31:36 -0500
+Processing by StationsController#search as HTML
+  Parameters: {"address"=>"5050 S lakeshore dr, Chicago, IL 60615"}
+  Rendering stations/search.html.erb within layouts/application
+  Rendered stations/search.html.erb within layouts/application (3940.8ms)
+Completed 200 OK in 3948ms (Views: 3947.7ms)
+
+
+Started GET "/stations" for 127.0.0.1 at 2017-07-04 18:31:45 -0500
+Processing by StationsController#index as HTML
+  Rendering stations/index.html.erb within layouts/application
+  Rendered stations/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 18ms (Views: 16.6ms)
+
+
+Started GET "/stations/3?id=3" for 127.0.0.1 at 2017-07-04 18:31:46 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.7ms)
+
+
+Started GET "/stations/2?id=2" for 127.0.0.1 at 2017-07-04 18:32:00 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.8ms)
+
+
+Started GET "/stations/128?id=128" for 127.0.0.1 at 2017-07-04 18:32:03 -0500
+Processing by StationsController#show as HTML
+  Parameters: {"id"=>"128"}
+  Rendering stations/id.html.erb within layouts/application
+  Rendered stations/id.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 9.5ms)
+
+
