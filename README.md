@@ -1,3 +1,6 @@
+NOTE:
+Homework is completed as specified below.
+
 # Homework #2
 
 5 points.  Due before the next class.
